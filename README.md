@@ -4,6 +4,9 @@ Covid-19 India - Project Data.
 To Start 
 1. npm i
 2. npm start
+
+website - https://bharatcovid19booth.web.app
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
 ## Development server

@@ -9,11 +9,11 @@ export class Covid19Service {
   public hourCount: BehaviorSubject<string> = new BehaviorSubject<string>("");
   constructor(private http:HttpClient) { }
    async loadInformation () {
-    const url = 'https://api.covid19india.org/data.json';
+    const url = 'https://data.covid19india.org/v4/min/data.min.json';
     return await this.http.get<any>(url).toPromise();
    }
    async loadIndiaData() {
-    const url = 'http://covid-rest.herokuapp.com/india';
+    const url = 'https://data.covid19india.org/v4/min/data.min.json';
     return await this.http.get<any>(url).toPromise();
    }
 }
